@@ -6,13 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="fruit-impl" />
+        <module name="library-impl" />
         <module name="shop-api" />
         <module name="shop-app" />
         <module name="shop-impl" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="fruit-impl" target="1.8" />
       <module name="java-spi" target="1.8" />
+      <module name="library-impl" target="1.8" />
       <module name="shop-api" target="1.8" />
       <module name="shop-app" target="1.8" />
       <module name="shop-impl" target="1.8" />

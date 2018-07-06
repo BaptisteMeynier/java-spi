@@ -10,7 +10,7 @@ import java.util.ServiceLoader;
 
 public final class Shop {
 
-    private static final String DEFAULT_PROVIDER = "com.shop.impl.LibraryItemServiceImpl";
+    private static final String DEFAULT_PROVIDER = "com.shop.impl.LibraryItemServiceProvider";
 
     //All providers
     public static List<ShopProvider> providers() {

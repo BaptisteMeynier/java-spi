@@ -1,38 +1,27 @@
 package com.shop.app;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import com.java6.shop.Shop;
+import com.java6.shop.api.Item;
+import org.junit.Assert;
+import org.junit.Test;
 
-/**
- * Unit test for simple App.
- */
-public class AppTest 
-    extends TestCase
-{
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public AppTest( String testName )
-    {
-        super( testName );
+import java.util.Arrays;
+
+
+public class AppTest {
+
+    @Test
+    public void should_get_all_provider(){
+        Assert.assertTrue(Shop.providers().size()>1);
+        Shop.providers().forEach(shopProvider -> System.out.println(shopProvider.getClass().getName()));
     }
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
+    @Test
+    public void should_get_library_provider(){
+        Item[] items = Shop.provider().create().getItems();
+        System.out.println("----------------------------------------");
+        Arrays.asList(items).forEach(item -> System.out.println("Item --> " + item.getName() + " : " + item.getPrice()));
+        Assert.assertTrue(Shop.provider().getClass().getName().contains("Library"));
     }
 
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
-    }
 }

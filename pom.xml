@@ -15,6 +15,7 @@
 	<modules>
 		<module>shop-api</module>
 		<module>shop-app</module>
-		<module>shop-impl</module>
+		<module>library-impl</module>
+		<module>fruit-impl</module>
 	</modules>
 </project>

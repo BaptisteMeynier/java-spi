@@ -5,11 +5,7 @@ import com.java6.shop.api.Item;
 
 import java.util.Arrays;
 
-/**
- * Hello world!
- *
- */
-public class App 
+public class App
 {
     public static void main( String[] args )
     {
