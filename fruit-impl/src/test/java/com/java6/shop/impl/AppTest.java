@@ -1,4 +1,4 @@
-package com.shop.impl;
+package com.java6.shop.impl;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

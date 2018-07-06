@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="bag-impl" />
         <module name="fruit-impl" />
         <module name="library-impl" />
         <module name="shop-api" />
@@ -14,6 +15,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="bag-impl" target="1.8" />
+      <module name="bagimpl" target="1.7" />
       <module name="fruit-impl" target="1.8" />
       <module name="java-spi" target="1.8" />
       <module name="library-impl" target="1.8" />

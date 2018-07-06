@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/bag-impl/bag-impl.iml" filepath="$PROJECT_DIR$/bag-impl/bag-impl.iml" />
       <module fileurl="file://$PROJECT_DIR$/fruit-impl/fruit-impl.iml" filepath="$PROJECT_DIR$/fruit-impl/fruit-impl.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-spi.iml" filepath="$PROJECT_DIR$/java-spi.iml" />
       <module fileurl="file://$PROJECT_DIR$/library-impl/library-impl.iml" filepath="$PROJECT_DIR$/library-impl/library-impl.iml" />

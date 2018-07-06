@@ -10,12 +10,15 @@ import java.util.ServiceLoader;
 
 public final class Shop {
 
-    private static final String DEFAULT_PROVIDER = "com.shop.impl.LibraryItemServiceProvider";
+    private static final String DEFAULT_PROVIDER = "com.java6.shop.impl.LibraryItemServiceProvider";
 
     //All providers
-    public static List<ShopProvider> providers() {
+    public static List<ShopProvider> providers(boolean refresh) {
         List<ShopProvider> services = new ArrayList<>();
         ServiceLoader<ShopProvider> loader = ServiceLoader.load(ShopProvider.class);
+        if (refresh) {
+            loader.reload();
+        }
         loader.forEach(services::add);
         return services;
     }

@@ -17,5 +17,6 @@
 		<module>shop-app</module>
 		<module>library-impl</module>
 		<module>fruit-impl</module>
+		<module>bag-impl</module>
 	</modules>
 </project>
