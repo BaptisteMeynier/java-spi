@@ -1,9 +1,9 @@
 package com.shop.impl;
 
 import com.java6.shop.api.Item;
-import com.java6.shop.api.ItemManager;
+import com.java6.shop.api.ItemService;
 
-public class LibraryItemManagerImpl implements ItemManager {
+public class LibraryItemServiceImpl implements ItemService {
 
 	Item[] items = new Item[] {
 			new Item("Book1",12),

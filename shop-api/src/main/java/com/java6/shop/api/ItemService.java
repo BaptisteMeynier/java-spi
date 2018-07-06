@@ -1,7 +1,7 @@
 package com.java6.shop.api;
 
 
-public interface ItemManager {
+public interface ItemService {
 	   Item[] getItems();
 }
 

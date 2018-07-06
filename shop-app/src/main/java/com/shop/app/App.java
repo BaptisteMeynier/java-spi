@@ -1,5 +1,10 @@
 package com.shop.app;
 
+import com.java6.shop.Shop;
+import com.java6.shop.api.Item;
+
+import java.util.Arrays;
+
 /**
  * Hello world!
  *
@@ -8,6 +13,12 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        Shop.providers().forEach(provider -> {
+            System.out.println("Retreiving items from provider :" + provider);
+            Item [] items = provider.create().getItems();
+            System.out.println("----------------------------------------");
+            Arrays.asList(items).forEach(item -> System.out.println("Item --> " + item.getName() + " : " + item.getPrice()));
+        });
+
     }
 }

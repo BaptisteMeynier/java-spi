@@ -1,7 +1,7 @@
 package com.java6.shop.spi;
 
-import com.java6.shop.api.ItemManager;
+import com.java6.shop.api.ItemService;
 
 public interface ShopProvider {
-	ItemManager create();
+	ItemService create();
 }
